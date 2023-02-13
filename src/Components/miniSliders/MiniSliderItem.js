@@ -14,7 +14,7 @@ const MiniSliderItem = ({ data, kind, isLoading }) => {
   return (
     <Fragment>
       {!isLoading ? (
-        <div className="lg:w-[207px] xl:w-[220px] xl:h-[350px]  md:w-[150px] md:h-[280px]  xs:w-[160px] xs:h-[250px] relative overflow-hidden rounded-lg item-minislider-wrapper cursor-pointer">
+        <div className="lg:w-[207px] xl:w-[220px] xl:h-[350px]  md:w-[160px] md:h-[280px]  xs:w-[150px] xs:h-[250px] relative overflow-hidden rounded-lg item-minislider-wrapper cursor-pointer">
           <Skeleton
             variant="rectangular"
             animation="wave"
@@ -26,7 +26,7 @@ const MiniSliderItem = ({ data, kind, isLoading }) => {
       ) : (
         <div
           onClick={handleNavigate}
-          className="lg:w-[207px] xl:w-[220px] xl:h-[350px]  md:w-[150px] md:h-[280px]  xs:w-[160px] xs:h-[250px] relative overflow-hidden rounded-lg item-minislider-wrapper cursor-pointer"
+          className="lg:w-[207px] xl:w-[220px] xl:h-[350px]  md:w-[160px] md:h-[280px]  xs:w-[150px] xs:h-[250px] relative overflow-hidden rounded-lg item-minislider-wrapper cursor-pointer"
         >
           <img
             src={`${HeaderUrl}${data.poster_path}`}

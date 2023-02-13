@@ -72,7 +72,7 @@ const SearchPage = () => {
 
   return (
     <div className="w-full h-full text-white">
-      <div className="flex flex-wrap justify-around w-full h-full gap-y-8 md:gap-x-8 xs:gap-x-2">
+      <div className="flex flex-wrap justify-center w-full h-full gap-y-8 md:gap-x-8 xs:gap-x-2">
         {movieTvSearch?.length > 0 ? (
           movieTvSearch.map((movieTvData) => (
             <MiniSliderItem
