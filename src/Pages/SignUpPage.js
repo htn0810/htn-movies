@@ -214,7 +214,7 @@ const SignUpPage = () => {
             </button>
           </form>
           <ButtonSignInGoogle></ButtonSignInGoogle>
-          <span className="lg:mt-20  xs:mt-16 font-normal lg:text-[22px] md:text-[18px] xs:text-[14px]  text-grayColorText">
+          <span className="mt-14 font-normal text-[14px] leading-[21px] text-grayColorText">
             Already have an account ? <span> </span>
             <NavLink to="/sign-in">
               <span className="text-mainColor">Sign in</span>

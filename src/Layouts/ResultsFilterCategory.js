@@ -48,7 +48,7 @@ const ResultsFilterCategory = ({ genreId, kind }) => {
     setPageCount(Math.ceil(event));
   };
   return (
-    <div className="flex-1 min-h-[1000px] mt-[50px] justify-around flex lg:gap-x-6 xs:gap-3 gap-y-10 flex-wrap">
+    <div className="min-h-[1000px] mt-[50px] flex justify-between lg:gap-x-3 xs:gap-3 gap-y-10 flex-wrap">
       <Fragment>
         {moviesFilter?.length > 0 &&
           moviesFilter.map((movie) => (
@@ -59,7 +59,6 @@ const ResultsFilterCategory = ({ genreId, kind }) => {
               isLoading={isLoading}
             ></MiniSliderItem>
           ))}
-
         <div className="w-full mx-auto mt-10 pagination">
           <Pagination
             onPageChange={handlePageClick}

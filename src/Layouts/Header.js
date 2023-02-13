@@ -125,7 +125,7 @@ const Header = () => {
         {userAccount?.email && showMenuSidebar && (
           <div
             onClick={handleLogOut}
-            className="absolute right-0 w-full px-10 py-3 mt-10 text-xl font-semibold cursor-pointer bottom-[120px] text-secondarySidebarText hover:text-hoverColorText hover:bg-hoverColorBg hover:border-r-8 hover:border-r-hoverColorBorder"
+            className="absolute right-0 w-full px-10 py-3 mt-10 text-xl font-semibold cursor-pointer bottom-[200px] text-secondarySidebarText hover:text-hoverColorText hover:bg-hoverColorBg hover:border-r-8 hover:border-r-hoverColorBorder"
           >
             <i className="font-semibold bx bx-log-out"></i>
             <span className="ml-2 leading-[30px] ">Log out</span>
