@@ -1,7 +1,7 @@
 export const APIkey = "api_key=2617a84c1e75abc6d84284f64fc81884";
 export const HeaderUrl = "https://image.tmdb.org/t/p/original";
 export const Url = "https://api.themoviedb.org/3";
-export const xxxlWidth = 1920;
+export const xxxlWidth = 1980;
 export const xlWidth = 1280;
 export const lgWidth = 1024;
 export const mdWidth = 768;

@@ -14,7 +14,7 @@ const MiniSlider = ({ type, kind }) => {
 
   useEffect(() => {
     if (width >= xxxlWidth) {
-      setSlides(6);
+      setSlides(5);
     } else if (width >= xlWidth) {
       setSlides(4);
     } else if (width >= xsWidth) {

@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
 import { A11y, Scrollbar } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { APIkey, Url, xlWidth, xsWidth, xxxlWidth } from "../../constant";
+import { APIkey, Url, xlWidth, xsWidth } from "../../constant";
 import useWindowDimensions from "../hook/useWindowDimension";
 import MiniSliderItem from "./MiniSliderItem";
 
@@ -13,9 +13,7 @@ const MiniSlider = ({ type, kind }) => {
   const { width } = useWindowDimensions();
 
   useEffect(() => {
-    if (width >= xxxlWidth) {
-      setSlides(6);
-    } else if (width >= xlWidth) {
+    if (width >= xlWidth) {
       setSlides(4);
     } else if (width >= xsWidth) {
       setSlides(3);

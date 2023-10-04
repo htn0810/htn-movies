@@ -14,7 +14,7 @@ const MiniSlider = ({ type, kind }) => {
 
   useEffect(() => {
     if (width >= xxxlWidth) {
-      setSlides(6);
+      setSlides(5);
     } else if (width >= xlWidth) {
       setSlides(4);
     } else if (width >= xsWidth) {
@@ -37,7 +37,7 @@ const MiniSlider = ({ type, kind }) => {
       <Swiper
         grabCursor="true"
         spaceBetween={slides === 3 ? 15 : 25}
-        slidesPerView={slides}
+        slidesPerView={5}
         scrollbar={{ draggable: true }}
         modules={[Scrollbar, A11y]}
       >

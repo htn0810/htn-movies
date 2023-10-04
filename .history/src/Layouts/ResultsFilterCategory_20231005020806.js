@@ -50,7 +50,7 @@ const ResultsFilterCategory = ({ genreId, kind }) => {
   return (
     <div className="min-h-[1000px] mt-[50px] flex justify-between lg:gap-x-3 xs:gap-3 gap-y-10 flex-wrap">
       <Fragment>
-        <div className="grid grid-flow-row-dense grid-cols-3 xxxl:grid-cols-5 2xl:grid-cols-4 gap-x-10 gap-y-6">
+        <div className="grid grid-flow-row-dense grid-cols-3 xxxl:grid-cols-5 2xl:grid-cols-4 md:grid-cols-4 gap-x-10 gap-y-6">
           {moviesFilter?.length > 0 &&
             moviesFilter.map((movie) => (
               <MiniSliderItem

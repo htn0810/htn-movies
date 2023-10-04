@@ -5,7 +5,6 @@ module.exports = {
   theme: {
     screens: {
       xs: "360px",
-      xxxl: "1920px",
       ...defaultTheme.screens,
     },
     extend: {

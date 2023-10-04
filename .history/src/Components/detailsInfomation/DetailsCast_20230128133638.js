@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
 import { A11y, Scrollbar } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { APIkey, HeaderUrl, xlWidth, xsWidth, xxxlWidth } from "../../constant";
+import { APIkey, HeaderUrl, xlWidth, xsWidth } from "../../constant";
 import PropTypes from "prop-types";
 import useWindowDimensions from "../hook/useWindowDimension";
 
@@ -15,9 +15,7 @@ const DetailsCast = ({ dataId, kind }) => {
   const { width } = useWindowDimensions();
 
   useEffect(() => {
-    if (width >= xxxlWidth) {
-      setSlides(6);
-    } else if (width >= xlWidth) {
+    if (width >= xlWidth) {
       setSlides(4);
     } else if (width >= xsWidth) {
       setSlides(3);

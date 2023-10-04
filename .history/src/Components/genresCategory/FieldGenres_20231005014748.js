@@ -2,20 +2,20 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const FieldGenres = ({ genreData, setGenreId, genreId }) => {
-  const handleSetGenreId = (id) => {
-    console.log(id);
-    if (genreId.includes(id)) {
-      const newGenres = genreId.filter((data) => data !== id);
+  const handleSetGenreId = () => {
+    console.log(genreId);
+    if (genreId.includes(genreData.id)) {
+      const newGenres = genreId.filter((data) => data !== genreData.id);
       setGenreId(newGenres);
     } else {
-      setGenreId([...genreId, id]);
+      setGenreId([...genreId, genreData.id]);
     }
   };
 
   return (
     <div className="flex items-center justify-between w-full font-medium text-[18px] leading-[22px] py-5 border-b-2 border-b-secondarySidebarText">
       <label
-        onClick={() => handleSetGenreId(genreData.id)}
+        onClick={handleSetGenreId}
         htmlFor={genreData.id}
         className="cursor-pointer"
       >

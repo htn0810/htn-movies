@@ -4,11 +4,11 @@ import PropTypes from "prop-types";
 const FieldGenres = ({ genreData, setGenreId, genreId }) => {
   const handleSetGenreId = (id) => {
     console.log(id);
-    if (genreId.includes(id)) {
-      const newGenres = genreId.filter((data) => data !== id);
+    if (genreId.includes(genreData.id)) {
+      const newGenres = genreId.filter((data) => data !== genreData.id);
       setGenreId(newGenres);
     } else {
-      setGenreId([...genreId, id]);
+      setGenreId([...genreId, genreData.id]);
     }
   };
 

@@ -14,15 +14,13 @@ const MoviesPage = () => {
 
   return (
     <div className="flex w-full h-full text-white">
-      <div className="flex-1 w-2/3 h-full xl:mr-10 sm:mr-5">
+      <div className="justify-center flex-1 w-2/3 h-full xl:mr-10 sm:mr-5">
         {genreId.length > 0 ? (
           <div className="flex-1 w-full h-full">
-            <div className="flex justify-center">
-              <ResultsFilterCategory
-                kind="movie"
-                genreId={genreId}
-              ></ResultsFilterCategory>
-            </div>
+            <ResultsFilterCategory
+              kind="movie"
+              genreId={genreId}
+            ></ResultsFilterCategory>
           </div>
         ) : (
           <div className="flex-1 w-full h-full">

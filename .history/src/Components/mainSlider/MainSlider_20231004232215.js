@@ -6,7 +6,7 @@ import SliderItem from "./SliderItem";
 const MainSlider = ({ latestMovies }) => {
   if (!latestMovies) return null;
   return (
-    <div className="xxxl:h-[550px] 2xl:h-[450px] lg:h-[400px] md:h-[350px] xs:h-[300px]  mb-10 cursor-pointer">
+    <div className="2xl:h-[450px] lg:h-[400px] md:h-[350px] xs:h-[300px]  mb-10 cursor-pointer">
       <Swiper
         modules={[Navigation, Autoplay]}
         autoplay={{ delay: 2000, disableOnInteraction: false }}

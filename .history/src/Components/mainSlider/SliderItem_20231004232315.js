@@ -10,7 +10,7 @@ const SliderItem = ({ movieValue }) => {
   return (
     <div
       onClick={() => navigate(`/details?kind=movie&id=${movieValue.id}`)}
-      className="relative w-full xxxl:h-[550px] 2xl:h-[450px] lg:h-[400px] md:h-[350px] xs:h-[300px] "
+      className="relative w-full 2xl:h-[450px] lg:h-[400px] md:h-[350px] xs:h-[300px] "
     >
       <div className="w-full h-full">
         <img
